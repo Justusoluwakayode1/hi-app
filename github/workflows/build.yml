@@ -30,8 +30,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t my-image .
+        docker build -t 239f45a609ce .
 
     - name: Run Docker container
       run: |
-        docker run my-image
+        docker run 239f45a609ce
