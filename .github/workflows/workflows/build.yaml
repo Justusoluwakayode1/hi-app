@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print event type and branch
-        run: echo "Hello from GitHub Actions! Triggered by a ${{ github.event_name }} to master."
+        run: echo "Hello from GitHub Actions! Triggered by a ${{ Hi-app }} to master."
 
-        
+
 
    
