@@ -1,12 +1,20 @@
-name: Hello World
+name: Hello on Push or PR to Master
 
-on: [push]
+on:
+  push:
+    branches:
+      - master  # Trigger on push to 'master'
+  pull_request:
+    branches:
+      - master  # Trigger when a PR targets 'master'
 
 jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Print greeting
-        run: echo "Hello, World from GitHub Actions!"
+      - name: Print event type and branch
+        run: echo "Hello from GitHub Actions! Triggered by a ${{ github.event_name }} to master."
+
+        
 
    
