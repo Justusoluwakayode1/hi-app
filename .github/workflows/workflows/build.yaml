@@ -28,10 +28,4 @@ jobs:
       run: |
         pytest
 
-    - name: Build Docker image
-      run: |
-        docker build -t 239f45a609ce .
-
-    - name: Run Docker container
-      run: |
-        docker run 239f45a609ce
+   
